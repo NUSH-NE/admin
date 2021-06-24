@@ -1,13 +1,20 @@
+// Entry point
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import 'antd/dist/antd.dark.css'; // or 'antd/dist/antd.less'
+import './index.css';
+
+import firebase from "firebase/app";
+
+// Add the Firebase services that you want to use
+import "firebase/auth";
+import "firebase/firestore";
+
+ReactDOM.render(<App />,
   document.getElementById('root')
 );
 
