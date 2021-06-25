@@ -7,9 +7,11 @@ import SideMenu from './fragments/SideMenu';
 import NotFound from './subpages/NotFound';
 import TopAppBar from './fragments/TopAppBar';
 import Landing from './subpages/Landing';
+import LinkMgmt from './subpages/LinkMgmt';
 
 const pages = [
-    {path: 'addArticle', name: 'Add Articles', elem: <AddArticle />}
+    {path: 'addArticle', name: 'Add Articles', elem: <AddArticle />},
+    {path: 'linkMgmt', name: 'Link Management', elem: <LinkMgmt />},
 ]
 
 export default function App() {
