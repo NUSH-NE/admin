@@ -8,11 +8,24 @@ import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.dark.css'; // or 'antd/dist/antd.less'
 import './index.css';
 
+// Import firebase stuff
 import firebase from "firebase/app";
+import "firebase/analytics";
 
-// Add the Firebase services that you want to use
 import "firebase/auth";
 import "firebase/firestore";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDkJIx8hbU_5-8aPBzfsKi1vHwQliKG5hg",
+    authDomain: "ne-edu.firebaseapp.com",
+    projectId: "ne-edu",
+    storageBucket: "ne-edu.appspot.com",
+    messagingSenderId: "296273538078",
+    appId: "1:296273538078:web:dda01455949345d57b520f",
+    measurementId: "G-0XJHB0Z6JV"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(<App />,
   document.getElementById('root')

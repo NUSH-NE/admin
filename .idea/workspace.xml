@@ -2,21 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cafbd68-b884-4d2d-8ea4-41999b48a866" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/dialog-polyfill-npm-0.4.10-bd12634f12-d783ae0fc6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/firebaseui-npm-4.8.0-b9c2cc9705-f8db13567a.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/material-design-lite-npm-1.3.0-67115c6554-a5cfea3c6a.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-analytics-npm-0.6.13-4dacc42eeb-97f1a2a9e1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-app-check-interop-types-npm-0.1.0-b0b1f827b5-0db41f31dd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-app-check-npm-0.1.4-750a3c60ab-9f592f65c5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-app-check-types-npm-0.1.0-fd0873da5f-d4cba219d4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-app-npm-0.6.27-1b47afcd5d-2876a80e98.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-auth-npm-0.16.7-b2ffbb622f-02a5f14737.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-component-npm-0.5.3-8abf9c47ab-1df8282f27.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-database-npm-0.10.5-609e26a1b1-cd6cd83365.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-firestore-npm-2.3.7-4c27932e52-cb78d5d827.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-functions-npm-0.6.12-06a0140b9f-6b89c6f8c3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-installations-npm-0.4.29-53c94a5eb8-1f743cff8a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-installations-types-npm-0.3.4-76c8369064-d7f8427fa0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-messaging-npm-0.7.13-a1c41a51f8-479c96982e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-performance-npm-0.4.15-9f1ad375eb-4fb3037150.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-polyfill-npm-0.3.36-d5399d5a8e-1edca83f54.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-remote-config-npm-0.1.40-5098cea616-e28e8cff34.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-storage-npm-0.5.5-2b4c82de3a-453f50484d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@firebase-webchannel-wrapper-npm-0.5.0-a7835293f3-d673fac07a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/core-js-npm-3.6.5-5941340066-9283348dd5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/firebase-npm-8.6.8-e6d3c0ad58-542b94e43d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/promise-polyfill-npm-8.1.3-d68a56f46f-f8134da02b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/whatwg-fetch-npm-2.0.4-24703ef2b1-47339b6d29.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fragments/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.js" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/build-state.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/build-state.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-analytics-compat-npm-0.0.900-exp.d92a36260-6ca388f62e-3840f7ee9b.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-analytics-npm-0.0.900-exp.d92a36260-b466a9fd9f-dcd3f27722.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-app-compat-npm-0.0.900-exp.d92a36260-221b824f7b-39162436c2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-app-npm-0.0.900-exp.d92a36260-8e27130928-a188a1adca.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-auth-compat-npm-0.0.900-exp.d92a36260-c6ceaf5042-048406e036.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-auth-npm-0.0.900-exp.d92a36260-44def9ae26-ab1b6e2c2c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-component-npm-0.5.0-4cd3537db0-3df6e6c180.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-database-compat-npm-0.0.900-exp.d92a36260-9aba8d1eb7-13a50ac3f7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-database-npm-0.0.900-exp.d92a36260-0cc2b7cdc5-2056ddd9b9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-firestore-compat-npm-0.0.900-exp.d92a36260-29cabf4ece-81229b14f4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-firestore-npm-0.0.900-exp.d92a36260-87b368499c-6181a99da1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-functions-compat-npm-0.0.900-exp.d92a36260-cfe4c5de13-d597687943.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-functions-npm-0.0.900-exp.d92a36260-ab4379ddbe-c4d4257ca9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-installations-npm-0.0.900-exp.d92a36260-bcd73ae0aa-744b9d1b33.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-messaging-compat-npm-0.0.900-exp.d92a36260-b4dda23f23-931a1b83e9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-messaging-npm-0.0.900-exp.d92a36260-260765b7b0-806a5bf3bd.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-performance-compat-npm-0.0.900-exp.d92a36260-84d9613037-2f6d65d950.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-performance-npm-0.0.900-exp.d92a36260-c8958014eb-cf7e5c3261.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-remote-config-compat-npm-0.0.900-exp.d92a36260-4d92b605e8-ac5e7a4e4c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-remote-config-npm-0.0.900-exp.d92a36260-465f549018-16bc7ed037.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-storage-compat-npm-0.0.900-exp.d92a36260-da90a36421-7cae570ad8.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-storage-npm-0.0.900-exp.d92a36260-cbf4774663-56a8f2d859.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@firebase-webchannel-wrapper-npm-0.4.1-fc540ff834-3ae7842ead.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/firebase-npm-9.0.0-beta.2-b580d38705-0e1176f544.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/immediate-npm-3.0.6-c27588a2d3-e86d4d20e2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/jszip-npm-3.6.0-c4e545e1dc-7b6e31bbe3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/lie-npm-3.3.0-35ddd11a4d-6c758fbea3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/selenium-webdriver-npm-4.0.0-beta.1-c690d5a201-11ca215f2b.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/selenium-webdriver-npm-4.0.0-beta.4-a716565503-22d32930b2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/set-immediate-shim-npm-1.0.1-f1ac810b1a-be64b68001.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/tmp-npm-0.2.1-a9c8d9c0ca-13973825ff.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/ws-npm-7.5.0-2736efb7e8-f9ac36310e.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fragments/SideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fragments/SideMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fragments/TopAppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fragments/TopAppBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/antd-tinymce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/antd-tinymce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/subpages/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/subpages/AddArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/subpages/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/subpages/Landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/subpages/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/subpages/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,7 +143,7 @@
       <updated>1624437577474</updated>
       <workItem from="1624437578766" duration="14032000" />
       <workItem from="1624520132255" duration="1789000" />
-      <workItem from="1624539057748" duration="393000" />
+      <workItem from="1624539057748" duration="4626000" />
     </task>
     <servers />
   </component>
