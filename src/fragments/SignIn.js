@@ -3,9 +3,9 @@ import { LogoutOutlined } from '@ant-design/icons';
 
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 
-import firebase from "firebase/app";
+import firebase from 'firebase/app';
 
 const uiConfig = {
     // Popup signin flow rather than redirect flow.
@@ -28,10 +28,12 @@ export default function SignIn({visible, setVisible}) {
     }, []);
 
     return <Modal title='Account'
-           footer={[<Button onClick={() => setVisible(false)} key='close'>Close</Button>]}
-           visible={visible}
-           onOk={() => setVisible(false)}
-           onCancel={() => setVisible(false)}>
+                  centered
+                  destroyOnClose
+                  footer={[<Button onClick={() => setVisible(false)} key='close'>Close</Button>]}
+                  visible={visible}
+                  onOk={() => setVisible(false)}
+                  onCancel={() => setVisible(false)}>
         {
             isLoggedIn && <Layout>
                 <Typography.Title level={4}>User Info</Typography.Title>

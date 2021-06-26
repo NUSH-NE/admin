@@ -1,12 +1,13 @@
-import { Typography } from 'antd';
+import { Result, Button } from 'antd';
 import { memo } from 'react';
-
-import { QuestionCircleOutlined } from '@ant-design/icons';
 
 export default memo(function NotFound() {
     return <>
-        <QuestionCircleOutlined style={{fontSize: '12em', marginBottom: '1rem', marginRight: 'auto'}} />
-        <Typography.Title>Oops, the page you're looking for could not be found</Typography.Title>
-        <Typography.Text>Error 404 - Not found</Typography.Text>
+        <Result
+            status='404'
+            title='Error 404 - Not found'
+            subTitle="Oops, the page you're looking for could not be found"
+            extra={<Button type='primary' href='/'>Go to home</Button>}
+        />
     </>
 });

@@ -8,10 +8,12 @@ import NotFound from './subpages/NotFound';
 import TopAppBar from './fragments/TopAppBar';
 import Landing from './subpages/Landing';
 import LinkMgmt from './subpages/LinkMgmt';
+import ArticleMgmt from './subpages/ArticleMgmt';
 
 const pages = [
     {path: 'addArticle', name: 'Add Articles', elem: <AddArticle />},
-    {path: 'linkMgmt', name: 'Link Management', elem: <LinkMgmt />},
+    {path: 'articleMgmt', name: 'Manage Articles', elem: <ArticleMgmt />},
+    {path: 'linkMgmt', name: 'Manage Related Links', elem: <LinkMgmt />},
 ]
 
 export default function App() {

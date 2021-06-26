@@ -43,14 +43,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:12.8.3"],
             ["@tinymce/tinymce-react", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:3.12.6"],
             ["antd", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:4.16.3"],
+            ["dompurify", "npm:2.2.9"],
             ["eslint-config-react-app", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:6.0.0"],
             ["firebase", "npm:8.6.8"],
+            ["lz-string", "npm:1.4.4"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:17.0.2"],
             ["react-firebaseui", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:5.0.2"],
             ["react-router-dom", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:5.2.0"],
             ["react-scripts", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:4.0.3"],
+            ["uuid", "npm:8.3.2"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",
@@ -9758,6 +9761,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["dompurify", [
+        ["npm:2.2.9", {
+          "packageLocation": "./.yarn/cache/dompurify-npm-2.2.9-1a93a7440c-8673be49ae.zip/node_modules/dompurify/",
+          "packageDependencies": [
+            ["dompurify", "npm:2.2.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["domutils", [
         ["npm:1.7.0", {
           "packageLocation": "./.yarn/cache/domutils-npm-1.7.0-7a1529fcfc-a5b2f01fb3.zip/node_modules/domutils/",
@@ -14939,14 +14951,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:12.8.3"],
             ["@tinymce/tinymce-react", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:3.12.6"],
             ["antd", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:4.16.3"],
+            ["dompurify", "npm:2.2.9"],
             ["eslint-config-react-app", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:6.0.0"],
             ["firebase", "npm:8.6.8"],
+            ["lz-string", "npm:1.4.4"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:17.0.2"],
             ["react-firebaseui", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:5.0.2"],
             ["react-router-dom", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:5.2.0"],
             ["react-scripts", "virtual:55111bce2343139bdc0a4005820af1947705b96473e0ef94d45e39375b001e0620e0caaf7f1d7ad7c2d9fe0fe5a04e35e0dcff3a3f4f7f308dace2e33a1421cb#npm:4.0.3"],
+            ["uuid", "npm:8.3.2"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",
