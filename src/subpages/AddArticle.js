@@ -5,7 +5,7 @@ import { CloseOutlined,
     FileImageOutlined,
     DeleteOutlined,
 } from '@ant-design/icons';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import firebase from 'firebase/app';
 import { v4 as uuidv4 } from 'uuid';
@@ -25,7 +25,8 @@ export default function AddArticle() {
         [mockVotes, setMockVotes] = useState(0),
         [user, setUser] = useState({}),
         [coverURL, setCoverURL] = useState(null),
-        [uploading, setUploading] = useState(false);
+        [uploading, setUploading] = useState(false),
+        editorRef = useRef();
 
     useEffect(() => {
         firebase.auth().onAuthStateChanged(setUser);
@@ -33,7 +34,7 @@ export default function AddArticle() {
         storageRef = firebase.storage().ref();
     }, []);
 
-    const uploadImg = async opt => {
+    const uploadImg = opt => {
         const { onSuccess, onError, file, onProgress } = opt;
         const task = storageRef.child('articleAttachments/' + uuidv4() + '-' + file.name).put(file);
 
@@ -43,7 +44,6 @@ export default function AddArticle() {
                 // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
                 const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 onProgress({ percent: progress });
-                console.log('Upload is ' + progress + '% done');
             },
             (error) => {
                 // Handle unsuccessful uploads
@@ -88,6 +88,29 @@ export default function AddArticle() {
         </body>`);
     };
 
+    const tinyMCEUpload = (info, success, failure, progress) => {
+        const task = storageRef.child('editorImages/' + uuidv4() + '-' + info.filename()).put(info.blob());
+
+        task.on('state_changed', (snapshot) =>
+            {
+                // Observe state change events such as progress, pause, and resume
+                // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                progress((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+            },
+            (error) => {
+                // Handle unsuccessful uploads
+                failure('Upload failed: ' + error.message);
+            },
+            () => {
+                // Handle successful uploads on complete
+                // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+                task.snapshot.ref.getDownloadURL().then((downloadURL) => {
+                    success(downloadURL);
+                });
+            }
+        );
+    }
+
     return <>
         <Typography.Title>Add Articles</Typography.Title>
         <Form
@@ -97,7 +120,7 @@ export default function AddArticle() {
                 console.log(v)
                 db.collection('articles').doc((+new Date()).toString()).set({
                     title: v.title, sum: v.sum, body: v.body, hideVote: !!v.hideVote, coverURL: v.fileUpload.file.response.downloadURL,
-                    uid: user.uid,
+                    uid: user.uid, time: +new Date(),
                 }).then(() => {
                     v.fileUpload.file.response.ref.updateMetadata({
                         customMetadata: {
@@ -134,11 +157,16 @@ export default function AddArticle() {
 
             <Form.Item label='Body' name='body' extra='Drag the lower right corner of editor to resize'
                        rules={[{ required: true, message: 'Article without body = no article' }]}>
-                <Editor options={{
-                    branding: false,
-                    skin: 'custom_dark',
-                    skin_url: 'https://cryptoalgorithm.github.io/tinyMCE-theme/custom_dark'
-                }} />
+                <Editor onInit={(e, editor) => editorRef.current = editor}
+                        options={{
+                            contextmenu: 'copy paste',
+                            images_reuse_filename: true,
+                            images_upload_handler: tinyMCEUpload,
+                            branding: false,
+                            skin: 'custom_dark',
+                            skin_url: 'https://cryptoalgorithm.github.io/tinyMCE-theme/custom_dark'
+                        }}
+                />
             </Form.Item>
 
             <Form.Item label='Hide votes' extra='Number of votes will not appear and can only be viewed by admins' name='hideVote'>

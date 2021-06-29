@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Editor as TinyMCE } from '@tinymce/tinymce-react';
 
 let defaultPlugins = [
-    'code advlist autolink lists link image charmap print preview anchor hr',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table paste code wordcount'
+    'advlist autolink lists link image charmap print preview anchor hr',
+    'searchreplace visualblocks fullscreen',
+    'insertdatetime table paste code wordcount'
 ];
 let defaultMenubar = 'file edit view insert format tools table tc';
 let defaultToolbar = [
