@@ -78,9 +78,8 @@ export default function ImgMgmt() {
                             <Layout>
                                 <Typography.Title level={5}>Information for imagePost '{imagePost.customMetadata.title}'</Typography.Title>
                                 <Typography.Text>Description: <span style={{fontWeight: 600}}>{imagePost.customMetadata.caption}</span></Typography.Text>
-                                <Typography.Text>
-                                    Time Added: <span style={{fontWeight: 600}}>{imagePost.timeCreated}</span>
-                                </Typography.Text>
+                                <Typography.Text>Time Added: <span style={{fontWeight: 600}}>{imagePost.timeCreated}</span></Typography.Text>
+                                <Typography.Text>Author: <span style={{fontWeight: 600}}>{imagePost.customMetadata.author} ({imagePost.customMetadata.email})</span></Typography.Text>
                                 <Typography.Title level={5}>Cover Image</Typography.Title>
                                 <Space style={{marginBottom: '.5rem'}}>
                                     <Image width='auto' height={150} src={imagePost.URL ?? ''} style={{width: 'auto', borderRadius: 5}}
