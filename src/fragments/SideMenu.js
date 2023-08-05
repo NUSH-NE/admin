@@ -1,6 +1,7 @@
 import { memo, useState } from 'react';
 import { Menu } from 'antd';
 import { UnorderedListOutlined, SafetyOutlined, PlusOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const { SubMenu } = Menu;
 
@@ -30,19 +31,18 @@ export default memo(function SideMenu({page}) {
     return <Menu
         onOpenChange={onOpenChange}
         openKeys={openKeys}
-        onClick={e => document.location = '/' + e.key}
         style={{ width: 256 }}
         selectedKeys={page}
         mode='inline'>
         <SubMenu key='add' icon={<PlusOutlined />} title='Add'>
-            <Menu.Item key='addArticle'>Add Articles</Menu.Item>
+            <Menu.Item key='addArticle'><Link to={'/addArticle'}>Add Articles</Link></Menu.Item>
         </SubMenu>
         <SubMenu key='man' icon={<UnorderedListOutlined />} title='Manage'>
-            <Menu.Item key='articleMgmt'>Article Management</Menu.Item>
-            <Menu.Item key='linkMgmt'>Link Management</Menu.Item>
+            <Menu.Item key='articleMgmt'><Link to={'/articleMgmt'}>Article Management</Link></Menu.Item>
+            <Menu.Item key='linkMgmt'><Link to={'/linkMgmt'}>Link Management</Link></Menu.Item>
         </SubMenu>
         <SubMenu key='mod' icon={<SafetyOutlined />} title='Moderate'>
-            <Menu.Item key='imgMod'>Image Post Moderation</Menu.Item>
+            <Menu.Item key='imgMod'><Link to={'/imgMod'}>Image Post Moderation</Link></Menu.Item>
         </SubMenu>
     </Menu>
 })

@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, HashRouter as Router, Route } from 'react-router-dom';
 
 // Custom components
 import AddArticle from './subpages/AddArticle';
@@ -9,11 +9,13 @@ import TopAppBar from './fragments/TopAppBar';
 import Landing from './subpages/Landing';
 import LinkMgmt from './subpages/LinkMgmt';
 import ArticleMgmt from './subpages/ArticleMgmt';
+import ImgMgmt from "./subpages/ImgMgmt";
 
 const pages = [
     {path: 'addArticle', name: 'Add Articles', elem: <AddArticle />},
     {path: 'articleMgmt', name: 'Manage Articles', elem: <ArticleMgmt />},
     {path: 'linkMgmt', name: 'Manage Related Links', elem: <LinkMgmt />},
+    {path: 'imgMod', name: 'Image Post Moderation', elem: <ImgMgmt />}
 ]
 
 export default function App() {
@@ -32,7 +34,6 @@ export default function App() {
                         {
                             pages.map(p => <Route path={'/' + p.path} key={p.path}><SideMenu page={p.path} ps={pages} /></Route>)
                         }
-
                         <Route><SideMenu page='' ps={pages} /></Route>
                     </Switch>
                     <Layout style={{padding: '.75rem'}}>
